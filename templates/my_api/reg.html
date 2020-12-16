@@ -1,0 +1,11 @@
+<form method="post" class="reg-form">
+    {% csrf_token %}
+    {{ form.login }}<br>
+    {{ form.email }}<br>
+    {{ form.name }}<br>
+    {{ form.surname }}<br>
+    {{ form.psw_hash }}<br>
+    {{ form.phone }}<br>
+    <span>{{ error }}</span>
+    <input type="submit" value="Регистрация">
+</form>
